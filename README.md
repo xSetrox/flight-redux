@@ -2,7 +2,7 @@
 # FlightRedux  
 A LUA script for the Stand mod menu that completely revamps GTA V's flight hud.
 
-# [Watch demo](https://www.reddit.com/)
+# [Watch demo](https://www.youtube.com/watch?v=vokY8jHNhAI)
 
 ## So.. how do I use this?  
 Get in a plane and turn it on!  
