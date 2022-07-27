@@ -2,7 +2,9 @@
 # FlightRedux  
 FlightRedux is a LUA script for the Stand mod menu that completely revamps GTA V's huds for jets and offers additional functionality and realism, including an implementation of the Ground Proximity Warning System, missile warnings, missile markings on the map, altitude. pitch, heading, and roll indicators, better lock-on indicators, and much, much more. Plus, it looks a lot better than GTA V's default HUD.  
 
-
+## PLEASE NOTE THAT THIS IS A BETA! 
+Things may break.  
+  
 # [Watch demo](https://www.youtube.com/watch?v=vokY8jHNhAI)
 
 ## So.. how do I use this?  
