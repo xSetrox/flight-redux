@@ -237,7 +237,7 @@ while true do
             local _2d_trajectory = world_to_screen_coords(trajectory.x, trajectory.y, trajectory.z)
             HUD.HIDE_HUD_COMPONENT_THIS_FRAME(14)
             -- trajectory
-            directx.draw_texture(trajectory_icon, 0.02, 0.02, 0.0, 0.0, _2d_trajectory.x, _2d_trajectory.y, 0, hud_green)
+            directx.draw_texture(trajectory_icon, 0.02, 0.02, 0.5, 0.5, _2d_trajectory.x, _2d_trajectory.y, 0, hud_green)
             -- boresight
             directx.draw_texture(boresight, 0.005, 0.005, 0.0, 0.0, hud_pos.x, hud_pos.y, 0, hud_green)
             -- altimeter
