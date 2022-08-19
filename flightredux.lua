@@ -253,7 +253,7 @@ while true do
             local ang = ENTITY.GET_ENTITY_ROTATION(player_vehicle, 0)
             directx.draw_text(0.71, 0.46, "PITCH " .. tostring(math.ceil(ang.x)), 4, 0.7, hud_green, false)
             directx.draw_text(0.71, 0.48, "ROLL " .. tostring(math.ceil(ang.y)), 4, 0.7, hud_green, false)
-            directx.draw_text(0.50, 0.80, "HDG " .. tostring(math.ceil(ang.z)), 5, 0.7, hud_green, false)
+            directx.draw_text(0.50, 0.80, "HDG " .. tostring(math.ceil(ENTITY.GET_ENTITY_HEADING(player_vehicle))), 5, 0.7, hud_green, false)
             -- mach
             directx.draw_text(0.250, 0.62, "MACH " .. tostring(math.ceil(knts * 0.00149984)), 4, 0.8, hud_green, false)
             directx.draw_texture(altimeter_outline, 0.020, 0.020, 0.0, 0.0, 0.3, 0.44, 0.5, hud_green)
