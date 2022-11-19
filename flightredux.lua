@@ -182,10 +182,11 @@ util.create_thread(function (thr)
                 projectile_blips[k] = nil
             end
         end
-        all_objects = entities.get_all_objects_as_handles()
+        all_objects = entities.get_all_objects_as_pointers()
         missile_nearby = false
-        for k,obj in pairs(all_objects) do
-            if is_entity_a_projectile(ENTITY.GET_ENTITY_MODEL(obj)) then
+        for k, obj_ptr in pairs(all_objects) do
+            if is_entity_a_projectile(entities.get_model_hash(obj_ptr)) then
+                local obj = entities.pointer_to_handle(obj_ptr)
                 local c1 = ENTITY.GET_ENTITY_COORDS(obj)
                 local c2 = ENTITY.GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(player_vehicle, 0.0, -300.0, 0.0)
                 if (MISC.GET_DISTANCE_BETWEEN_COORDS(c1.x, c1.y, c1.z, c2.x, c2.y, c2.z, true) < 300 and get_entity_owner(obj) ~= players.user()) then 
